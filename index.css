@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height: 100vh;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 12, 0, 0.5)), url(https://img.freepik.com/free-vector/gradient-galaxy-background_52683-140338.jpg);
+    background-position:center ;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+    
+}
+.logo{
+    width: 100px;
+    height: 90px;
+    padding: 45px 12px 0 20px;
+    cursor: pointer;
+   margin: -2px 0 0 -80px;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translate(2%);
+    color: #eeecf2;
+    font-size: 25px;
+    margin: -2px 0 0 -70px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+}
+.content h1{
+    font-size:50px;
+    font-weight: 60px;
+    letter-spacing: 1px;
+    
+}
+.content h1 span{
+    color: rgb(57, 215, 239);
+}
+.content button{
+    background-color:transparent;
+    border: 2px solid #fff;
+    outline:none;
+    padding: 10px 10px 10px 10px;
+    color:#ebe4e4 ;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+    margin-bottom: 24px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+button:hover {
+    color:rgb(57, 215, 239);
+
+}
+.launch-time{
+    display:flex;
+    margin: 20px 0 0 2px;
+    box-sizing: border-box;
+    
+}
+.launch-time div{
+    flex-basis: 100px;
+    
+}
+.launch-time div p{
+    font-size:70px ;
+    text-align:center;
+    border: 3px solid #fff;
+    padding:0px 20px 0 20px;
+    border-radius: 12px;
+    box-shadow: 10px 2px 10px rgba(1,0,0,5);
+    box-sizing: border-box;
+    color: #fff;
+    margin: 5px 20px 6px -2px;
+}
+.launch-time div span{
+    font-size: 13px;
+    margin-bottom: 14px;
+    margin-left: 3px;
+    text-align:center;
+    border: 2px solid #fff;
+    padding:0px 20px 0 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,5);
+    box-sizing: border-box;
+    color: #fff;
+    margin: 12px 20px 6px -2px;
+}
+.rocket{
+    width:500px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 5;
+    }
+}
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        padding: 20px 5px 5px 10px;
+        margin: -20px -43px;
+    }
+    .content {
+        font-size: 22px;
+        text-align: center;
+        transform: translate(-28%, -50%);
+        left: 50%;
+        top: 50%;
+    }
+    .content p{
+        /* margin-left: -135px; */
+    }
+
+    .content h1 {
+        font-size: 35px;
+        /* margin-left: -125px; */
+    
+    }
+    .content h1 span{
+        margin-left: -10px;
+    }
+
+    .content button {
+        font-size: 19px;
+        padding: 8px;
+        width: 40%;
+        margin-left: -5px;
+    }
+
+    .launch-time {
+        align-items: center;
+        
+    }
+
+    .launch-time div {
+        flex-basis: 60px;
+        margin: -5px;
+    
+    }
+
+    .launch-time div p, .launch-time div span {
+        font-size: 20px;
+        padding: 0 5px;
+       
+    }
+
+    .rocket {
+        width: 450px;
+        right: -30%;
+    }
+}
