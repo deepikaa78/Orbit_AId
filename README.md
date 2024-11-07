@@ -1,4 +1,5 @@
-##### Project Name: Rocket Fueling
+###### Project Name: ROCKET FUELING
+
 ## Description:
 This project is a simple and customizable countdown timer designed to build anticipation for an event or product launch. 
 Users can watch the timer count down in real-time, enhancing the user experience and excitement for the upcoming release.
